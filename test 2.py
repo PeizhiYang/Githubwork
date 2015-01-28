@@ -68,6 +68,27 @@ list5 = range(5) ##gives from 0 to m-1
 s1 = Series(list4)
 s2 = Series(list5)
 
-##lists to dataframe
+##lists/ series to dataframe
+list6 = range(60,65)
+zip(list4, list5)
+zip(list4, list5, list6)
+##bracket and ????????[] & ()?????????????????????????????????????????????????
 
+zip1 = zip(list4, list5, list6)
+df1 = DataFrame(zip1)
+df1[0]
+df1
+df2 = DataFrame(zip1, columns = ['two', 'apple', 'smily face'])  ##column names
+df3 = DataFrame(zip1, columns = [2, 'apple', 'smily face']) ###df3[2], df3['2"] keys????????
 
+df3 [3:4] #slice out the row 3
+df3[['apple', 'smily face']][3:4]## get column apple and smily face-- two brackets!!!
+
+## make dataframe using dict notation---- renaming 
+df4 = DataFrame({':(':list4, 9:list6}) #comma keep adding, but list should be the same length
+dict1 = {':(':list4, 9:list6}
+dict1[':(']
+
+## how to stack series into another series
+s1 = Series (list4)
+s2 = Series(list6)
